@@ -30,7 +30,7 @@ else:
     for message in st.session_state.messages:
         message_avatar = "🏏"
         if message["role"] == "assistant":
-            avatar = "./img/surrey.jpg"
+            message_avatar = "./img/surrey.jpg"
         with st.chat_message(message["role"], avatar=message_avatar):
             st.markdown(message["content"])
 
